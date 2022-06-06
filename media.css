@@ -1,0 +1,8 @@
+@media (min-height:1024px) {
+    #sprite {
+        position: absolute;
+        right: 45%;
+        bottom: 5cm;
+    }
+
+}

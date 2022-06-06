@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+html {
+    overflow: hidden;
+}
+
+
+body {
+    height: 100vh;
+    background-color: rgb(255, 234, 0);
+}
+
+
+
+.parentDiv {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lineParent {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    position: absolute;
+    width: 5cm;
+    height: 0;
+    border: 2px solid black;
+    position: absolute;
+
+
+    border-radius: 50%;
+
+}
+
+
+
+.bot {
+
+
+    position: absolute;
+    top: 0;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 45%;
+    text-align: center;
+
+}
+
+.player {
+
+
+    position: absolute;
+    bottom: 0;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    right: 45%;
+
+}
+
+
+
+.buttons {
+    position: fixed;
+    top: 80%;
+    left: 45%;
+
+}
+
+.buttons button {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.527);
+    padding: 5px 5px 5px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+}
+
+
+
+
+
+.buttons button:hover {
+    color: white;
+}
+
+
+#sprite1 {
+    position: absolute;
+    top: 2cm;
+    left: 45%;
+
+}
+
+
+
+
+#sprite {
+    position: absolute;
+    right: 45%;
+    bottom: 4cm;
+}
+
+.apply button {
+    font-size: 25px;
+    font-family: Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+    border: none;
+    background-color: rgba(0, 195, 255, 0.61);
+    padding: 5px 5px 5px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    left: 7cm;
+    top: 11cm;
+}
+
+
+.winner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: relative;
+    z-index: 3;
+    /* display: none; */
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    0% {
+        height: 0;
+        width: 0;
+        font-size: 0;
+
+    }
+
+    100% {
+        height: 500px;
+        width: 800px;
+        transform: rotate(360deg);
+        font-size: 250px;
+
+    }
+}
+
+.trophy {
+    font-size: 250px;
+    position: absolute;
+    animation: bounce 1s linear;
+
+}
+
+.trophy span {
+    position: absolute;
+    font-size: 25px;
+    left: 2cm;
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* animation: bounce 1s linear; */
+
+}
+
+.winner button {
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px 20px;
+    /* animation: bounce 1s linear; */
+    border-radius: 30px;
+    background-color: rgba(0, 0, 255, 0.534);
+
+}
